@@ -29,8 +29,8 @@ public class App {
         HashSet<Tupla> tuplas = new HashSet<Tupla>(400);
         String[] list = input.split("\n");
         Random r = new Random();
-        for (int i = 0; i < 400; i++) {
-            Tupla t = new Tupla(r.nextInt(100), list[i % 100]);
+        for (int i = 0; i < 500; i++) {
+            Tupla t = new Tupla(r.nextInt(50), list[i % 100]);
             String msg = "Ingresar: " + t;
             System.out.printf("%-30s%s", msg, ((i + 1) % 5 == 0) ? "\n" : " | ");
             tuplas.add(t);
